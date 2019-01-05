@@ -1,0 +1,20 @@
+<!doctype html>
+<script type="module">
+
+
+window.onload =
+async function init () {
+	let list = await fetch('pages.txt').then(res => res.text());
+	list = list.replace(/\r/g, '').split('\n').filter(x => x);
+	let directory = { };
+	for (let id of list) {
+		directory[id.replace(/-/g, '').replace(/_/g, '')] = { filename: id };
+	}
+	app(directory);
+}
+async function app (directory) {
+	console.log(directory);
+}
+
+
+</script>

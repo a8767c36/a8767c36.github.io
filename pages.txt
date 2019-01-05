@@ -1,0 +1,3 @@
+pages/subdir/file.txt
+pages/test_1.txt
+pages/test_2.txt
