@@ -60,6 +60,7 @@ async function app (directory) {
 	let list = Object.keys(directory).reverse();
 	for (let id of list) {
 		try {
+			let data = await fetch(directory[id].filename).then(res => res.ok ? res.text() : _throw(res));
 			html_article_container.append(
 				$('<div>')
 				.addClass('article')
@@ -71,7 +72,7 @@ async function app (directory) {
 				.append(
 					$('<pre>')
 					.addClass('body')
-					.text(await fetch(directory[id].filename).then(res => res.text()))
+					.text(data)
 				)
 			).append('<hr>')
 		} catch (e) {
@@ -90,4 +91,6 @@ async function app (directory) {
 }
 
 
+// helper functions
+function _throw (err) { throw err }
 </script>
