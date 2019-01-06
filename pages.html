@@ -66,7 +66,7 @@ async function app (directory) {
 				.append(
 					$('<span>')
 					.addClass('header')
-					.text(directory[id].filename)
+					.text(directory[id].filename.replace(/^pages\//, ''))
 				)
 				.append(
 					$('<pre>')
