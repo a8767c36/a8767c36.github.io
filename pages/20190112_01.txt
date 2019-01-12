@@ -1,0 +1,8 @@
+Chakra Point - "Spinning Wheel"
+
+There are some things that just don't change. Bones are bones and not blood, and humans eat food and shit shit and don't shit food and eat shit.
+Let's call them "invariants" - they don't change (they don't "vary") no matter the circumstances.
+Such invariants give rise to stability (to biological systems).
+Invariants are sometimes cyclic: The sun goes up and down and up and down...
+Let's give that special case (which is actually more common than the simple case) a special name: "Spinning Wheel".
+Translate it into "holy language" (to give it a special glamour) and voila... Chakra Points.
