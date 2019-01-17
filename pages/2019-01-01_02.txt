@@ -1,0 +1,2 @@
+Gleich einem Faden, der erst abgewickelt seinen Verlauf offenbart, so ist die Informatik ein Knäuel, dessen Qualität nicht der Anzahl an Bytes entspricht:
+Strukturen sind die Bausteine aller Programme, die zu komponieren (anzuordnen) die Kunst ist, die uns erfüllt.

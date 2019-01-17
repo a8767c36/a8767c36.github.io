@@ -1,0 +1,6 @@
+Ein häufiges und nützliches Muster der Informatik ist das Objekt: In sich geschlossen repräsentiert es Gliederung.
+
+Gliederung ist etwas, das wir verstehen und womit wir umgehen können, deshalb müssen wir diese bewahren.
+Funktionalität sei stets ein Objekt.
+
+Nun musst du einsehen, dass das Rechteck eines Containers in HTML nicht mehr ist als die Schale eines Objektes, um Gliederung zu bieten: Wenn ein Programm eine Komposition von Funktionalität ist, dann seien dessen Bausteine zu gliedern in Objekte.
