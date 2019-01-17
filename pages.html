@@ -1,4 +1,5 @@
 <!doctype html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>a8767c36's Blog</title>
 <style>
 html, body {
@@ -57,7 +58,7 @@ async function init () {
 async function app (directory) {
 	let html_article_container = $('#articles');
 	let html_load_button = $('#load_more');
-	let list = Object.keys(directory).reverse();
+	let list = Object.keys(directory).sort().reverse();
 	for (let id of list) {
 		try {
 			let data = await fetch(directory[id].filename).then(res => res.ok ? res.text() : _throw(res));
