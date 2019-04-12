@@ -20,3 +20,16 @@ pages/20190314_02.txt
 pages/20190314_03.txt
 pages/20190314_04.txt
 pages/20190318_01.txt
+pages/20190321_01.txt
+pages/20190404_01.txt
+pages/20190405_01.txt
+pages/20190409_01.txt
+pages/20190409_02.txt
+pages/20190409_03.txt
+pages/20190411_01.txt
+pages/20190411_02.txt
+pages/20190411_03.txt
+pages/20190411_04.txt
+pages/20190412_01.txt
+pages/20190412_02.txt
+pages/20190412_03.txt
