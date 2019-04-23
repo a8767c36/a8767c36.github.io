@@ -59,7 +59,15 @@ async function init () {
 async function app (directory) {
 	let html_article_container = $('#articles');
 	let html_load_button = $('#load_more');
-	let list = Object.keys(directory).sort().reverse();
+	let list = Object.keys(directory).sort(function (a, b) {
+		// special sort: if day equals, then reverse sort
+		let regex = /^pages\/(\d{8})\d{2}/;
+		if (regex.test(a) && regex.test(b))
+			if (regex.exec(a)[1] == regex.exec(b)[1])
+				return a < b ? 1 : -1;
+		// default to standard sort
+		return a < b ? -1 : 1;
+	 }).reverse();
 	for (let id of list) {
 		try {
 			let data = await fetch(directory[id].filename).then(res => res.ok ? res.text() : _throw(res));
