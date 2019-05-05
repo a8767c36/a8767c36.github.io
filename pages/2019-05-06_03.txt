@@ -1,0 +1,20 @@
+Ich möchte es auch hier nochmal stellen,
+in der Hoffnung, dass es eines Tages einen Leser genauso fasziniert und inspiriert,
+wie es das bei mir getan hat:
+
+Das Getreidekornrätsel
+
+Hintergrund: In Minecraft (einem Computerspiel) gibt es die Möglichkeit,
+dass der Spieler Getreidepflanzen anbaut. Das funktioniert so:
+Man nimmt ein Getreidekorn, pflanzt es in die Erde, und es wächst daraus eine Getreidepflanze,
+die man dann ernten kann, wobei man wiederum 0, 1, 2 oder 3 neue Getreidekörner erhält (Wahrscheinlichkeit jeweils 25%).
+
+Die Frage ist nun: Wenn ein Spieler mit einem solchen Korn zu spielen beginnt und immer wieder eines anbaut und erntet
+und anbaut und erntet und anbaut usw... (solange der Vorrat reicht), wie wahrscheinlich ist es dann (gemäß obigem Modell),
+dass sein Getreide schlussendlich (also in einer unendlich fernen Zukunft) ausgestorben sein wird?
+
+Dazu ein Beispiel:
+Spieler beginnt mit 1 Korn -> pflanzt an / erntet -> hat nun 2 Körner -> pflanzt 1 an / erntet -> hat nun 3 Körner -> usw.
+
+Noch ein Beispiel:
+Spieler beginnt mit 1 Korn -> pflanzt an / erntet -> hat nun 0 Körner -> ausgestorben :/
