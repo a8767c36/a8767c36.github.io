@@ -1,0 +1,31 @@
+Ich räsoniere seit kurzem über Datenbanken,
+auch weil ich glaube, diese bald zu verwenden
+aufgrund meiner aktuellen Arbeit.
+
+Heute hatte ich die Möglichkeit,
+mit einem äußerst klugen Menschen darüber Gedanken auszutauschen.
+
+Ich meinte immer, Datenbanken seien lediglich eine Möglichkeit, Daten abzulegen.
+Das impliziert ja auch der Name "Datenbank".
+(Dies ist eine sehr generische Sichtweise;
+ Es kann auch eine beliebige Datei / ein Verzeichnis am Dateisystem sein.)
+
+Mein Gesprächspartner heute (nennen wir ihn Mario) meinte dazu,
+dass Abstraktion nicht immer besser sei,
+und dass man daher oft Datenbanken eine Struktur zuweisen sollte,
+die dann auch einzuhalten ist.
+Dem stimme ich nach reiflicher Überlegung auch zu:
+Der Schlüssel ist dabei die Erkenntnis, dass
+Abstraktion nicht immer besser ist:
+Wenn wir uns mit realen Problemstellungen beschäftigen,
+stellen wir uns stets bestimmten (konkreten) Fällen, die behandelt werden.
+Diese Fälle können wir logisch dann als "Problem-Klasse" darstellen,
+und eine Klasse hat bekanntlich ein Schema.
+Eine Klasse hat Instanzen ("Objekte"),
+und eine Klasse ist zugleich die Menge all dieser Instanzen.
+Da macht es doch Sinn, diese Menge von Instanzen, die alle dasselbe Schema haben,
+auch als solche in der Datenbank darzulegen.
+Daher kommt die Überlegung,
+eine Datenbank sei eine Tabelle (= Matrix),
+mit Zeilen, die je ein Objekt desselben Schemas repräsentieren
+und damit je eine Instanz einer bestimmten Problem-Klasse.
