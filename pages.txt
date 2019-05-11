@@ -47,3 +47,7 @@ pages/2019-05-10_01.txt
 pages/2019-05-11_01.txt
 pages/2019-05-11_02.txt
 pages/2019-05-11_03.txt
+pages/2019-05-12_01.txt
+pages/2019-05-12_02.txt
+pages/2019-05-12_03.txt
+pages/2019-05-12_04.txt

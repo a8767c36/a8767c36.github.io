@@ -1,0 +1,11 @@
+Gedankenstrukturen sind wie Öl auf Wasser.
+
+Öl hat in Wasser gemischt eine chemische potentielle Energie,
+die direkt proportional zur Grenzfläche zum Wasser hin ist.
+(d.h. kleinere Oberfläche = kleinere potentielle Energie)
+Wie wir wissen, tendiert potentielle Energie dazu,
+sich in kinetische Energie zu wandeln.
+So wird die Grenzfläche des Öles minimiert:
+Es rundet sich,
+verliert an Ecken und Kanten,
+diese hat es nur im ersten Moment.
