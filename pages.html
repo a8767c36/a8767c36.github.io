@@ -61,7 +61,7 @@ async function app (directory) {
 	let html_load_button = $('#load_more');
 	let list = Object.keys(directory).sort(function (a, b) {
 		// special sort: if day equals, then reverse sort
-		let regex = /^pages\/(\d{8})\d{2}/;
+		let regex = /^pages\/(\d{8})/;
 		if (regex.test(a) && regex.test(b))
 			if (regex.exec(a)[1] == regex.exec(b)[1])
 				return a < b ? 1 : -1;

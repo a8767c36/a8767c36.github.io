@@ -1,0 +1,5 @@
+Es scheinen mir Worte zweierlei Zweck zu haben: zu verbinden und zu trennen.
+Das Wort "Baum" beschreibt alle Objekte, auf die die Beschreibung zutrifft,
+und grenzt sie somit von allen anderen ab.
+Gleichermaßen aber beschreibt "Affe klettert auf Baum" eine Relation zwischen Objekten,
+und deklariert somit eine Verknüpfung zwischen diesen.

@@ -51,3 +51,9 @@ pages/2019-05-12_01.txt
 pages/2019-05-12_02.txt
 pages/2019-05-12_03.txt
 pages/2019-05-12_04.txt
+pages/2019-05-13_01.txt
+pages/2019-05-13_02.txt
+pages/2019-05-16.txt
+pages/2019-05-16_02.txt
+pages/2019-05-17_01.txt
+pages/2019-05-17_02.txt
