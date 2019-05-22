@@ -1,0 +1,15 @@
+You know that feeling when you switch on the computer to write something,
+but it takes so long, when it's ready you forgot what you wanted to write?
+Because I do.
+Seriously.
+Software's supposed to be faster than old-fashioned pen & paper.
+Who the heck makes software this bloated anyway that it takes ages to even start??
+There are some important guidelines that apply to natural spoken language as well as software:
+Say exactely what makes sense, not more, not less. Say it in the simplest goddamn way possible.
+If you can follow this, you can't fail. Ever.
+And the software can NEVER be bloated enough to take ages to start.
+
+You know how spoken language is targeted, rational?
+Spoken language is to express ideas, not emotions.
+And nobody's ever had two good ideas at once.
+(Because the relevant part of the brain is single-threaded.)
