@@ -94,7 +94,7 @@ async function app (directory) {
 			continue;
 		}
 		html_load_button.text('load more...');
-		await new Promise(fulfill => html_load_button.one('click', fulfill));
+		if (Math.random() < 0.1) await new Promise(fulfill => html_load_button.one('click', fulfill));
 		html_load_button.text('loading...');
 	}
 	html_load_button.text('that\'s it (for now)');
