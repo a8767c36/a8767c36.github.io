@@ -67,6 +67,3 @@ pages/2019-05-19_06.txt
 pages/2019-05-19_07.txt
 pages/2019-05-19_08.txt
 pages/2019-05-19_09.txt
-pages/2019-05-22_01.txt
-pages/2019-05-22_02.txt
-pages/2019-05-22_03.txt
