@@ -10,7 +10,7 @@ In Symbolic Programming, you can, for example,
 pass some expression as an argument to a function,
 and the expression is not evaluated to data, but passed as-is to the function.
 This is *not a special feature*,
-but in fact *the core feature* of symbolic programming.
+but in fact *the core feature* of Symbolic Programming.
 
 LISP, then, to me is nothing more than the most beautiful way
 to express Symbolic Programming, and subsequently the equivalence
