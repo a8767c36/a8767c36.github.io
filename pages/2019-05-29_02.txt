@@ -1,0 +1,17 @@
+Thoughts about LISP
+===================
+
+In IT there's a concept called "Symbolic Programming",
+and it's about processing code (not "ordinary" data).
+It's about reflection (the ability to inspect oneself)
+and the equivalence of code and data.
+
+In Symbolic Programming, you can, for example,
+pass some expression as an argument to a function,
+and the expression is not evaluated to data, but passed as-is to the function.
+This is *not a special feature*,
+but in fact *the core feature* of symbolic programming.
+
+LISP, then, to me is nothing more than the most beautiful way
+to express Symbolic Programming, and subsequently the equivalence
+of code and data.
