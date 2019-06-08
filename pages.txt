@@ -76,3 +76,7 @@ pages/2019-05-25_01.txt
 pages/2019-05-29_01.txt
 pages/2019-05-29_02.txt
 pages/2019-06-03_01.txt
+pages/2019-06-08_01.txt
+pages/2019-06-08_02.txt
+pages/2019-06-08_03.txt
+pages/2019-06-08_04.txt
