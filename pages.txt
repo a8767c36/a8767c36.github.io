@@ -92,3 +92,5 @@ pages/2019-06-24_01.txt
 pages/2019-07-03_01.txt
 pages/2019-07-12_01.txt
 pages/2019-07-12_02.txt
+pages/2019-07-12_03.txt
+pages/2019-07-12_04.txt
