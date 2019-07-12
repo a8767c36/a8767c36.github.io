@@ -7,100 +7,51 @@ html, body {
 	padding: 0;
 	font-family: monospace;
 	background: hsla(40, 20%, 70%, 1);
+	height: 100%;
+	overflow: hidden;
 }
 #container {
 	width: calc(100% - 3em);
 	margin: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 @media (min-width: 800px) {
 	#container {
 		width: 720px;
 	}
 }
-
-.article {
-	margin: 2em 0;
-	font-size: 1.125em;
-}
-.article > .header {
-	border-bottom: 1px solid gray;
-	font-weight: bold;
-}
-.article > .body {
-	white-space: pre-wrap;  /* wrap long lines */
-}
-#load_more {
+#title {
 	text-align: center;
-	padding: 2em;
-	cursor: pointer;
-	margin-bottom: 1em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid hsla(200, 10%, 50%,100);
+}
+#message {
+	flex-grow: 1;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#spacer {
+	flex-grow: 1;
 }
 </style>
 <div id="container">
-	<h1 style="text-align: center;">a8767c36's Blog</h1>
-	<div id="articles"></div>
-	<div id="load_more">load more...</div>
+	<h1 id="title">a8767c36's Blog</h1>
+	<h1 id="message">
+		<span>Sommerpause</span> <img src="hug.png" style="height: 2em;">
+	</h1>
+	<div id="spacer"></div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-<script type="module">
-
-
-window.onload =
-async function init () {
-	let list = await fetch('pages.txt').then(res => res.text());
-	list = list.replace(/\r/g, '').split('\n').filter(x => x);
-	let directory = { };
-	for (let name of list) {
-		directory[name.replace(/-/g, '').replace(/_/g, '')] = { filename: name };
-	}
-	return app(directory);
+<script>
+if (Math.random() < 0.5) {
+	$('img')
+	.attr('src', 'tongue.png')
+	.css('padding-left', '1em')
+	.css('height', '3em')
 }
-async function app (directory) {
-	let html_article_container = $('#articles');
-	let html_load_button = $('#load_more');
-	let list = Object.keys(directory).sort(function (a, b) {
-		// special sort: if day equals, then reverse sort
-		let regex = /^pages\/(\d{8})/;
-		if (regex.test(a) && regex.test(b))
-			if (regex.exec(a)[1] == regex.exec(b)[1])
-				return a < b ? 1 : -1;
-		// default to standard sort
-		return a < b ? -1 : 1;
-	 }).reverse();
-	for (let id of list) {
-		try {
-			let data = await fetch(directory[id].filename).then(res => res.ok ? res.text() : _throw(res));
-			html_article_container.append(
-				$('<div>')
-				.addClass('article')
-				.append(
-					$('<span>')
-					.addClass('header')
-					.text(directory[id].filename.replace(/^pages\//, ''))
-				)
-				.append(
-					$('<pre>')
-					.addClass('body')
-					.text(data)
-				)
-			).append('<hr>')
-		} catch (e) {
-			html_article_container.append(
-				$('<div>')
-				.addClass('article')
-				.html('Failed to load article :/<br>Trying to load next...')
-			).append('<hr>')
-			continue;
-		}
-		html_load_button.text('load more...');
-		if (Math.random() < 0.1) await new Promise(fulfill => html_load_button.one('click', fulfill));
-		html_load_button.text('loading...');
-	}
-	html_load_button.text('that\'s it (for now)');
-}
-
-
-// helper functions
-function _throw (err) { throw err }
 </script>
