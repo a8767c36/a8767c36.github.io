@@ -97,3 +97,8 @@ pages/2019-07-12_04.txt
 pages/2019-07-18_01.txt
 pages/2019-07-19_01.txt
 pages/2019-08-04_01.txt
+pages/2019-08-08_01.txt
+pages/2019-08-08_02.txt
+pages/2019-08-08_03.txt
+pages/2019-08-08_04.txt
+pages/2019-08-09_01.txt

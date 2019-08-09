@@ -1,0 +1,12 @@
+Thoughts on Quantum Physics:
+The Distant Hot Gas
+
+Classically, we think of the universe as existing independent of any observer.
+Though quantum physics challenges that view.
+In quantum physics, every detail only ever exist dependent of an observer.
+Only because of the observer a system is made to "realize" a state, i.e. become one of many possibilities.
+
+Imagine a hot gas infinitely far away from any (external) observer. Because the gas is far enough away, information about the gas's microscopic configuration cannot reach the observer. We must therefore think of the gas as being in a superposition of all possible microstates. Therefore we can think of it as having only statistical properties (like total mass, momentum, angular momentum, total charge, etc.), as long as its internals remain not measured.
+
+The same is true if the gas is enclosed inside a Schroedinger's box: a box that does not allow any leak of information.
+
