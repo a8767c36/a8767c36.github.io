@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h3>
+Async Iterator Extensions - Proposal
+</h3>
+<p>This proposal defines a set of extension functions for the interface AsyncIterator.</p>
+<p>The difference between an extension function and an interface is that an interface requires every provider (aka. implementing class) to provide these methods, while extension functions are provided (implemented) only once (globally) and can then operate on every instance of the interface.</p>
+<p>Therefore extension functions significantly reduce the workload for providers of AsyncIterator by not requiring them to themselves provide a lot of method implementations. Also, extension functions are easier to test as there is only one implementation to be tested.</p>
+<p><a name="methods"><b>Methods</b></a></p>
+<p><code>AsyncIterator&lt;T1&gt;.map(Mapper&lt;T1, T2&gt;) : AsyncIterator&lt;T2&gt;</code></p>
+<p>Returns a new <code>AsyncIterator</code> that consists the original items after they have been applied to the <code>Mapper</code>.</p>
+<p><code>AsyncIterator&lt;T&gt;.filter(Predicate&lt;T&gt;) : AsyncIterator&lt;T&gt;</code></p>
+<p>Returns a new <code>AsyncIterator</code> that contains those of the original items that match a given <code>Predicate</code>.</p>
+<p><code>AsyncIterator&lt;T&gt;.forEach(Consumer&lt;T&gt;) : Promise</code></p>
+<p>This method is eager (see below). Consumes all items of the iterator. Returns a promise that fulfills/rejects when the iterator ends/errors.</p>
+<p><code>AsyncIterator&lt;T&gt;.eager() : AsyncIterator&lt;T&gt;</code></p>
+<p>By default, <code>AsyncIterator</code> is lazy, i.e. items are generated on demand. <code>.eager()</code> makes the iterator generate items as quickly as possible, buffering them until they are further consumed.</p>
+<p><code>AsyncIterator&lt;T&gt;.throw(?)</code></p>
+<p>Signals an error back to the source. It is the source's decision whether this should terminate the iterator with an error. The source could also catch the error and ignore it.</p>
+<p><code>AsyncIterator&lt;T&gt;.return(?)</code></p>
+<p>Signals end of consumption back to the source. It is the source's decision whether it should stop generating items and therefore end the iterator.</p>
+<p><code>AsyncIterator&lt;T&gt;.collect() : Promise&lt;Array&lt;T&gt;&gt;</code></p>
+<p>Collects all items from the iterator into an array.</p>
+<p><a name="interfaces"><b>Other Definitions</b></a></p>
+<p><code>Mapper&lt;T1, T2&gt; : (T1 =&gt; T2)</code></p>
+<p>A function that transforms an item of type <code>T1</code> into an item of type <code>T2</code>.</p>
+<p><code>Consumer&lt;T&gt; : (T =&gt; void)</code></p>
+<p>A function that takes an argument and returns no result.</p>
+<p><code>Predicate&lt;T&gt; : (T =&gt; boolean)</code></p>
+<p>A function that takes an argument and returns true/false.</p>
+</body>
+</html>
