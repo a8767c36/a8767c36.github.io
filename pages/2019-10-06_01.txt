@@ -1,0 +1,14 @@
+Thoughts on WebAssembly
+=======================
+
+For those of you who have never heard of it,
+WebAssembly is an exciting project dedicated to shaping the future of information technology.
+The fascinating thing about WebAssembly lies in its simplicity and elegance.
+
+In WebAssembly, two types of memory exist:
+So-called "linear memory" (which is basically a byte array),
+and a "symbol table" (which is basically an array of symbols).
+Nothing outside of that memory can be accessed directly.
+I say "directly" because symbols can act as doors, or as keys to an outer world.
+(And if they act as doors, we call them "functions", and if they act as keys, we call them "permissions".)
+
