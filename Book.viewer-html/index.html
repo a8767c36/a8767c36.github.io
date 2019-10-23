@@ -1,0 +1,82 @@
+<!doctype html>
+
+<style>
+html {
+	height: 100%;
+}
+
+body {
+	height: calc(100% - 1em);
+	margin: 0.5em;
+}
+
+div {
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+img {
+	max-height: 100%;
+}
+</style>
+
+<script type="module">
+import { h, Component, render } from './preact.js';
+
+window.onload = function () {
+	render(h(App), document.body);
+};
+
+class App extends Component {
+	constructor () {
+		super();
+		
+		this.state = { };
+		this.state.pageNum = 0;
+		eventStream(window, 'keydown').filter(evt => evt.key == 'PageDown').forEach(() => this.add('pageNum', +2));
+		eventStream(window, 'keydown').filter(evt => evt.key == 'PageUp'  ).forEach(() => this.add('pageNum', -2));
+	}
+	
+	add (key, value) {
+		this.state[key] += value;
+		this.setState(this.state);
+	}
+
+	render (props, state) {
+		return h('div', null, [
+			h('img', {src: `pages/page-${state.pageNum-1}.png`}),
+			h('img', {src: `pages/page-${state.pageNum  }.png`}),
+		]);
+	}
+}
+
+</script>
+
+<script>
+
+(async function* () { }).prototype.__proto__.map = async function* (f) {
+	for await (let x of this) {
+		yield await f(x);
+	}
+};
+
+(async function* () { }).prototype.__proto__.forEach = async function (f) {
+	for await (let x of this) {
+		await f(x);
+	}
+};
+
+(async function* () { }).prototype.__proto__.filter = async function* (f) {
+	for await (let x of this) {
+		if (await f(x))  yield x;
+	}
+};
+
+async function* eventStream (target, name) {
+	while (true) {
+		yield await new Promise(f => target.addEventListener(name, f, {once: true}));
+	}
+}
+
+</script>
