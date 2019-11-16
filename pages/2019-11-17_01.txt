@@ -1,0 +1,11 @@
+
+Software besteht zum Teil aus dem, was sie machen soll,
+und zum Teil aus dem, was sie langsam macht.
+
+Das kann man sich so vorstellen:
+Man startet das Programm.
+Es startet. Es lädt den Programmcode für die Hauptfunktionalität von der Festplatte. Dauer: 0.1 sek
+Es lädt den Programmcode inklusive sämtlicher Icon-Bild-Dateien von Zusatzfeatures von der Festplatte. Dauer: 10 sek
+
+Schlimm ist es, wenn Windows startet. Ich warte jedes mal,
+und bis es gestartet ist, habe ich vergessen, was ich machen wollte.
