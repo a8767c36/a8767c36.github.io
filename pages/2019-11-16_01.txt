@@ -1,0 +1,14 @@
+Also es gab ja dieses Streben nach Präzision (bzw. Genauigkeit),
+schon seit den Römern und schon sehr viel länger.
+Deshalb hat man auch die "natürlichen" Zahlen erfunden,
+denn 5 ist exakt 5 und niemals 4,
+während es bei den "reellen" Zahlen immer was dazwischen gibt ...
+
+Also ja, dieses Streben nach Präzision, also genau,
+es führte zur Erfindung von Computern
+und wenn man versucht, Computern beizubringen, bitte ungenau zu sein,
+dann ist das etwa so, wie wenn man einen Tisch baut und ihn dann als Sessel verwendet.
+(finde ich)
+
+Aber gut, sei's wie's sei.
+

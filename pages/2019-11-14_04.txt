@@ -1,0 +1,3 @@
+Noch zur Frage mit den Schieberegistern, nämlich, wie schaffen wir es, einen Gegenstand zu erkennen, ganz gleich wo er sich befindet und wann.
+Wir bezeichnen dies als "Translations-Invarianz", also dass wir den Gegenstand erkennen, ist unabhängig vom Ort (und von der Zeit).
+
